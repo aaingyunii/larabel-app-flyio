@@ -1,5 +1,9 @@
 name: Fly Deploy
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - 0.1.0/action-test
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 jobs:
